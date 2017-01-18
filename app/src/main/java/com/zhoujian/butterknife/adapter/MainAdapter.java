@@ -46,11 +46,11 @@ public class MainAdapter extends BaseAdapter {
         final ViewHolder holder;
         if (convertView != null) {
             view = convertView;
-             holder = (ViewHolder) view.getTag();
+            holder = (ViewHolder) view.getTag();
         } else {
             view = View.inflate(context, R.layout.list_item, null);
-             holder = new ViewHolder(view);
-             view.setTag(holder);
+            holder = new ViewHolder(view);
+            view.setTag(holder);
         }
         if (mList != null && mList.size() > 0) {
               holder.mTvName.setText(mList.get(position).getName());
